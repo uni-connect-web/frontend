@@ -1,0 +1,182 @@
+/* forms.scss */
+
+/* You can use SCSS to enhance your styling */
+
+// Common styles for both signup and login forms
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    margin-right: 10px;
+    color: #555;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 15px;
+    text-align: center;
+    
+}
+
+a {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+// Specific styles for signup form
+#signupForm {
+     // AOS animations
+     &[data-aos] {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+
+    h2 {
+        color: #007BFF;
+        text-align: center;
+    }
+
+    .input-group {
+        position: relative;
+
+        i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #555;
+        }
+
+        input {
+            padding-left: 30px; // Space for icon
+            border-color: #007BFF;
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        color: #fff;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 15px;
+        color: #555;
+    }
+
+    a {
+        color: #007BFF;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+    
+
+#loginForm {
+
+     // AOS animations
+     &[data-aos] {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+
+    h2 {
+        color: #007BFF;
+        text-align: center;
+    }
+
+    .input-group {
+        position: relative;
+
+        i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #555;
+        }
+
+        input {
+            padding-left: 30px; // Space for icon
+            border-color: #007BFF;
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        color: #fff;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 15px;
+        color: #555;
+    }
+
+    a {
+        color: #007BFF;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+    
+

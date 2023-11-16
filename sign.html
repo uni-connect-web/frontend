@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniConnect</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- custom css for forms -->
+    <link rel="stylesheet" href="css/forms.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+<!-- ... (Your existing header code) ... -->
+
+<!-- home section starts  -->
+<!-- ... (Your existing home section code) ... -->
+
+<!-- categories section starts  -->
+<!-- ... (Your existing categories section code) ... -->
+
+<!-- signup form section starts  -->
+<section class="form-container" id="signupForm">
+    <form class="form">
+        <h2>Sign Up</h2>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" required>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" required>
+        </div>
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a href="#" onclick="toggleForm('loginForm')">Log In</a></p>
+    </form>
+</section>
+
+<!-- login form section starts  -->
+<section class="form-container" id="loginForm" style="display:none;">
+    <form class="form">
+        <h2>Login</h2>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" required>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" required>
+        </div>
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="#" onclick="toggleForm('signupForm')">Sign Up</a></p>
+    </form>
+</section>
+
+<!-- footer section starts  -->
+<!-- ... (Your existing footer section code) ... -->
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<!-- custom js for toggling forms -->
+<script>
+    function toggleForm(formId) {
+        var signupForm = document.getElementById('signupForm');
+        var loginForm = document.getElementById('loginForm');
+        
+        if (formId === 'signupForm') {
+            signupForm.style.display = 'block';
+            loginForm.style.display = 'none';
+        } else {
+            signupForm.style.display = 'none';
+            loginForm.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>
